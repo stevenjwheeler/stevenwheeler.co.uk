@@ -2,7 +2,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #5E335F;
     color: white;
-    overflow: hidden;
     margin:0;
 }
 #page-container {
@@ -33,7 +32,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 95vh;
+    min-height: 91vh;
 }
 button {
     background-color: white;
