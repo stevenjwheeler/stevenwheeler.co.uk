@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <style type="text/css">
-    .center-screen {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      min-height: 100vh;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    h1 {
-      margin: 0px;
-    }
-  </style>
   <head>
+    <link rel="stylesheet" href="404.css">
     <title>Steven Wheeler - 404 Page not found</title>
   </head>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
   <body>
-    <div class="center-screen">
-      <h1>404<br>Page not found</h1>
-      <a href = "/"><br>Return to home</a>
+    <div id="page-container">
+      <div id="content-wrap">
+        <div class="center-screen">
+          <img class="resize-image" src="assets/question-mark.png" alt="Question Mark">
+          <h1 class="text"><br>404<br>Page not found<br><br></h1>
+          <button onclick="goBack()" class="button button1">Go back</button>
+        </div>
+        <footer id="footer">
+          <br>Icons made by <a style="text-decoration:none; color:inherit;" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a style="text-decoration:none; color:inherit;" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </footer>
+      </div>
     </div>
   </body>
 </html>
