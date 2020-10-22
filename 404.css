@@ -25,7 +25,6 @@ body {
 .text {
     text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
 }
-
 .center-screen {
     display: flex;
     flex-direction: column;
@@ -51,7 +50,7 @@ button {
 }
   
 .button1:hover {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
     color: white;
 }
 .resize-image {
