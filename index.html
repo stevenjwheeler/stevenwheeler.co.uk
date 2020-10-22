@@ -1,41 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="/index.css">
+
+<head>
+    <link rel="stylesheet" href="index.css">
     <title>Steven Wheeler - Index</title>
     <script>
-      function goBack() {
-      window.history.back();
-      }
+        function goBack() {
+            window.history.back();
+        }
     </script>
-  </head>
-  <body>
-    <div id="page-container">
-      <div id="navbar">
-        <div class="navbar-title">
-          <h1 class="bordered-text">&nbsp;&nbsp;Steven Wheeler&nbsp;&nbsp;</h1>
-        </div>
-        <nav-button class="navbar-entry nav-button nav-buttoneffects" onclick="window.location.href='index.html'">
-            <p>&nbsp;&nbsp;Home&nbsp;&nbsp;</p>
-        </nav-button>
-        <nav-button class="navbar-entry nav-button nav-buttoneffects" onclick="window.location.href='projects.html'">
-          <p>&nbsp;&nbsp;Projects&nbsp;&nbsp;</p>
-        </nav-button>
-        <nav-button class="navbar-entry nav-button nav-buttoneffects" onclick="window.location.href='contact.html'">
-          <p>&nbsp;&nbsp;Contact&nbsp;&nbsp;</p>
-        </nav-button>
-      </div>
-      <div id="content-wrap">
-        <div class="center-screen">
-          <img class="resize-image" src="/assets/contruction.png" alt="Construction">
-          <h1 class="bordered-text"><br>stevenwheeler.co.uk is under construction.<br>Check back soon!<br><br></h1>
-          <button onclick="goBack()" class="button buttoneffects">Go back</button>
-        </div>
-        <footer id="footer">
-          <p>Icons made by <a class="hyperlink-stylestrip" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a class="hyperlink-stylestrip" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
-          <p>For enquiries, contact webmaster@stevenwheeler.co.uk</p>
-        </footer>
-      </div>
+</head>
+
+<body>
+    <header>
+        <h1 class="bordered-text">Steven Wheeler</h1>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="assets/contruction.png" alt="Construction">
+        <h1 class="bordered-text">stevenwheeler.co.uk is under construction.</h1><h1>Check back soon!</h1>
+        <button onclick="goBack()">Go back</button>
+    </section>
+    <footer>
+        <p>Icons made by <a href="https://www.flaticon.com/authors/freepik"
+                title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+                title="Flaticon">www.flaticon.com</a></p>
+        <p>For enquiries, contact webmaster@stevenwheeler.co.uk</p>
+    </footer>
     </div>
-  </body>
+
+</body>
+
 </html>
