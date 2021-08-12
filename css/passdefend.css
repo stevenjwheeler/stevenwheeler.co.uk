@@ -6,6 +6,10 @@
   --small-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
 }
 
+html{
+  background-color: var(--primary-color);
+}
+
 body{
   min-width: 400px;
 }
@@ -88,7 +92,7 @@ img {
 
 .parallax__behind {
   background-color: var(--primary-color);
-  background-image: url("bg.svg");
+  background-image: url("../assets/passdefend/bg.svg");
   background-attachment: fixed;
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -100,7 +104,7 @@ img {
   box-shadow: var(--main-shadow);
   z-index: 9;
   padding: 1rem 2rem;
-
+  background-color: var(--off-white);
 }
 
 .header {
