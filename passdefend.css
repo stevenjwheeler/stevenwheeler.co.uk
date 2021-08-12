@@ -1,5 +1,6 @@
 body{
     overflow:hidden;
+    
   }
   
   h1 {
@@ -53,7 +54,7 @@ body{
   .cta:hover {
     text-decoration: none;
     transform: translateY(-5px);
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px rgba(154, 52, 18, 0.2);
   }
 
   .parallax {
@@ -73,9 +74,9 @@ body{
   
   .parallax-content-layer {
     transform: translateZ(0);
-    background: White;
+    background: #FAFAF9;
     transform-style: preserve-3d;
-    box-shadow: rgb(0 0 0 / 30%) 0px 0px 20px 10px;
+    box-shadow: rgb(154 52 18 / 30%) 0px 0px 20px 10px;
   }
   
   #banner{
