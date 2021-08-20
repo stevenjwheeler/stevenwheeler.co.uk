@@ -1,27 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="/404.css">
-    <title>Steven Wheeler - 404 Page not found</title>
+    <title>Steven Wheeler</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Steven Wheeler" />
+    <meta property="og:description" content="stevenwheeler.co.uk - The site of Steven Wheeler" />
+    <meta name="description" content="stevenwheeler.co.uk - The site of Steven Wheeler" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QWHWLRWP23"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-QWHWLRWP23");
+    </script>
+
+    <!--  Stylesheet -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/404.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
   </head>
-  <script>
-    function goBack() {
-      window.history.back();
-    }
-  </script>
+
   <body>
-    <div id="page-container">
-      <div id="content-wrap">
-        <div class="center-screen">
-          <img class="resize-image" src="/assets/question-mark.png" alt="Question Mark">
-          <h1 class="text"><br>404<br>Page not found<br><br></h1>
-          <button onclick="goBack()" class="button button1">Go back</button>
+    <div class="parallax">
+      <div class="parallax__behind">
+        <video playsinline autoplay muted loop id="bgvid">
+          <source src="./assets/index/bg.mp4" type="video/mp4">
+        </video>
+        <div class="top">
+          <header class="header">
+            <p class="header__subtitle">404 - Page not found</p>
+			      <a href="./index.html" class="header__btn btn shadow">Go home</a>
+          </header>
         </div>
-        <footer id="footer">
-          <br>Icons made by <a style="text-decoration:none; color:inherit;" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a style="text-decoration:none; color:inherit;" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-          <p>For enquiries or support, contact webmaster@stevenwheeler.co.uk<br><br></p>
-        </footer>
-      </div>
+	    </div>
     </div>
   </body>
 </html>
