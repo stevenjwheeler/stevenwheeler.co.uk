@@ -112,6 +112,14 @@ video {
   box-shadow: var(--main-shadow);
 }
 
+.avatar-holder {
+  position:relative; 
+  top:-11vh; 
+  display:flex; 
+  justify-content:center; 
+  align-items:center;
+}
+
 .avatar {
   height: 20vh;
   width: 20vh;
