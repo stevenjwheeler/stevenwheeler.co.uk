@@ -14,21 +14,6 @@ body{
   min-width: 400px;
 }
 
-.animated {
-  animation-duration: 2.5s;
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-  40% {transform: translateY(-30px);}
-  60% {transform: translateY(-15px);}
-}
-.bounce {
-  animation-name: bounce;
-}
-
 h1,
 h2,
 h3,
@@ -98,28 +83,21 @@ img {
   margin: 4rem 0;
 }
 
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .top {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.parallax__behind {
-  background-color: var(--primary-color);
-  background-image: url("../assets/passdefend/bg.svg");
-  background-attachment: fixed;
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 1;
-}
-
-.parallax__foreground {
-  box-shadow: var(--main-shadow);
-  z-index: 9;
-  padding: 1rem 2rem;
-  background-color: var(--off-white);
 }
 
 .header {
@@ -140,7 +118,8 @@ img {
 }
 
 .header__btn {
-  margin-bottom: 2rem;
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
 }
 
 .header__btn:visited {
@@ -151,73 +130,17 @@ img {
 .header__paragraph {
   font-weight: 300;
   line-height: 1.5rem;
-  margin-bottom: 0;
-}
-
-.features__item {
-  padding: 1rem;
-}
-
-.features__item-header {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.features__item-content {
-  margin-bottom: 0;
-}
-
-.features__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.screenshot{
-  padding: 0 1rem;
-}
-
-.future {
-  text-align: center;
-}
-
-.future__button {
-  margin-top: 1rem;
-}
-
-.floating-btn {
-  position: fixed;
-  left: 0;
-  top: 0;
-  background-color: white;
-  margin: 1rem;
-  padding: 1rem 1.5rem;
-  border-radius: 5px;
-  z-index: 999;
-  box-shadow: var(--small-shadow);
-  text-decoration: none;
-  width: fit-content;
+  margin-bottom: 2rem;
 }
 
 .shadow {
   box-shadow: var(--small-shadow);
 }
 
-.scrollinfo_bottom {
-  color:white; 
-  position:absolute; 
-  bottom:0; 
-  text-align:center; 
-  width:100%;
-}
-
 @media (max-width: 768px) {
   h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-  }
-
-  .features__grid {
-    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -232,9 +155,5 @@ img {
 
   .header__subtitle{
     font-size: 1.25rem;
-  }
-
-  .features__grid {
-    grid-template-columns: 1fr;
   }
 }
