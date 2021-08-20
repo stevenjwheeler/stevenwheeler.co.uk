@@ -118,6 +118,8 @@ video {
   background-color: black;
   border-radius: 50%;
   box-shadow: var(--main-shadow);
+  background-image: url("../assets/index/avatar.png");
+  background-size: cover;
 }
 
 .header__subtitle {
