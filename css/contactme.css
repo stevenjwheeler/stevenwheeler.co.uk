@@ -130,6 +130,10 @@ video {
   background-size: cover;
 }
 
+.grid-container {
+  display: grid;
+}
+
 .header__subtitle {
   font-size: 1.5rem;
   margin-bottom: 2rem;
