@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Steven Wheeler - 404</title>
+    <title>Steven Wheeler - About Me</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:title" content="Steven Wheeler - 404" />
+    <meta property="og:title" content="Steven Wheeler - About Me" />
     <meta property="og:description" content="stevenwheeler.co.uk - The site of Steven Wheeler" />
     <meta name="description" content="stevenwheeler.co.uk - The site of Steven Wheeler" />
 
@@ -29,7 +29,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
-  
+
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/main-favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/main-favicon/favicon-32x32.png">
@@ -43,13 +43,24 @@
   </head>
 
   <body>
-    <video playsinline autoplay muted loop id="bgvid">
-      <source src="./assets/bg.mp4" type="video/mp4">
-    </video>
     <div class="top">
-      <header class="header">
-        <p class="header__subtitle">404 - Page not found</p>
-			  <a href="./index" class="header__btn btn shadow">Go home</a>
+      <a href="./index" class="floating-btn">← go back</a>
+      <video playsinline autoplay muted loop id="bgvid">
+        <source src="./assets/bg.mp4" type="video/mp4">
+      </video>
+			<header class="header">
+				<div class="avatar-holder">
+					<div style="position:absolute;">
+						<header class="avatar">
+					</div>
+				</div>
+          <h1 class="header__title">Steven Wheeler</h1>
+          <p class="header__subtitle">About me</p>
+        <div class="embedded-box">
+          <p class="header__paragraph">Hi, I'm Steven! 👋</p>
+          <p class="header__paragraph" style="margin-bottom: 0;">I'm from the UK and recently graduated from University with a First in Computer Science (Cyber Security).<br><br>I have learnt to program in C, C++, C#, XAML, Python, JavaScript, Node.JS, SQL, HTML and CSS, either self-taught or in University, and have created Discord bots, Windows Form apps, Console apps, Universal Windows Platform apps, Scripts, etc.<br><br>The biggest project that I am currently working on is a Localized Password Manager that still has advanced security features whilst allowing the user to keep control of their data. You can check out this project <a href="./passdefend">here</a>.</p>
+        </div>
+        <a href="./contactme" class="header__btn btn shadow" style="margin-top: 2rem;">Contact Me</a>
       </header>
     </div>
   </body>

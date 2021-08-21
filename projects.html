@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Steven Wheeler - 404</title>
+    <title>Steven Wheeler - Projects</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:title" content="Steven Wheeler - 404" />
+    <meta property="og:title" content="Steven Wheeler - Projects" />
     <meta property="og:description" content="stevenwheeler.co.uk - The site of Steven Wheeler" />
     <meta name="description" content="stevenwheeler.co.uk - The site of Steven Wheeler" />
 
@@ -29,7 +29,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
-  
+
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/main-favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/main-favicon/favicon-32x32.png">
@@ -43,13 +43,23 @@
   </head>
 
   <body>
-    <video playsinline autoplay muted loop id="bgvid">
-      <source src="./assets/bg.mp4" type="video/mp4">
-    </video>
     <div class="top">
-      <header class="header">
-        <p class="header__subtitle">404 - Page not found</p>
-			  <a href="./index" class="header__btn btn shadow">Go home</a>
+      <a href="./index" class="floating-btn">← go back</a>
+      <video playsinline autoplay muted loop id="bgvid">
+        <source src="./assets/bg.mp4" type="video/mp4">
+      </video>
+			<header class="header">
+				<div class="avatar-holder">
+					<div style="position:absolute;">
+						<header class="avatar">
+					</div>
+				</div>
+          <h1 class="header__title">Steven Wheeler</h1>
+          <p class="header__subtitle">Projects</p>
+          <div class="grid-container embedded-box project-box"><div class="grid-item"><p class="header__subtitle" style="margin: 0;">PassDefend</p><p class="header__paragraph" style="margin: 0;">PassDefend is a feature packed, localized password manager that doesn't rely on other companies' servers.</p></div><div class="grid-item grid-item-center"><a href="./passdefend" class="header__btn btn shadow">Go</a></div></div>
+          <div class="grid-container embedded-box project-box"><div class="grid-item"><p class="header__subtitle" style="margin: 0;">ProteinBot</p><p class="header__paragraph" style="margin: 0;">ProteinBot was a Discord bot coded from the ground up to gameify exercise and promote competition, making exercise more fun.</p></div><div class="grid-item grid-item-center"><a href="https://github.com/robotprobot/proteinbot" class="header__btn btn shadow">Go</a></div></div>
+          <p style="margin-top: 2rem;">There are many more projects available on my GitHub, including private repositories and open source projects. You can find them <a href="https://www.github.com/robotprobot" target="_blank">here</a>.</p>
+        </div>
       </header>
     </div>
   </body>

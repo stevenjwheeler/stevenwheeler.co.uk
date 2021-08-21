@@ -126,12 +126,46 @@ video {
   background-color: black;
   border-radius: 50%;
   box-shadow: var(--main-shadow);
-  background-image: url("../assets/index/avatar.png");
+  background-image: url("../assets/avatar.png");
   background-size: cover;
+}
+
+.floating-btn {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: white;
+  margin: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  z-index: 999;
+  box-shadow: var(--small-shadow);
+  text-decoration: none;
+  width: fit-content;
+}
+
+.embedded-box {
+  -moz-box-shadow: inset 0 0 5px #000000;
+  -webkit-box-shadow: inset 0 0 5px #000000;
+  box-shadow: inset 0 0 5px #000000; 
+  padding: 5%;
+  background-color: rgba(114, 113, 113, 0.068);
+}
+
+.project-box {
+  margin-bottom: 0.25rem; 
+  text-align:left;
 }
 
 .grid-container {
   display: grid;
+  grid-auto-flow: column;
+}
+
+.grid-item-center {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
 }
 
 .header__subtitle {
