@@ -1,11 +1,55 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>Redirecting</title>
-      <meta http-equiv = "refresh" content = "0; url = https://www.stevenwheeler.co.uk/passdefend" />
-   </head>
-   <body>
-      <p>PassProtect is now PassDefend. Redirecting...</p>
-	  <a href="./passdefend.html">Please click here if you are not redirected after 3 seconds</a>
-   </body>
+<html lang="en">
+  <head>
+    <title>PassDefend - Redirecting</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="PassDefend - Redirecting" />
+    <meta property="og:description" content="A localized password manager that doesnt use another companies servers." />
+    <meta name="description" content="A localized password manager that doesnt use another companies servers." />
+    <meta http-equiv = "refresh" content = "3; url = ./passdefend" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QWHWLRWP23"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-QWHWLRWP23");
+    </script>
+
+    <!--  Stylesheet -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main-css.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
+  
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/passdefend/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/passdefend/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/passdefend/favicon-16x16.png">
+    <link rel="manifest" href="./assets/passdefend/site.webmanifest">
+    <link rel="mask-icon" href="./assets/passdefend/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./assets/passdefend/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="./assets/passdefend/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+
+  <body style="background-image: url(./assets/passdefend/bg.svg); background-size: cover;">
+      <div class="top">
+         <header class="header">
+            <p class="header__subtitle">PassProtect is now PassDefend</p>
+            <p class="header_paragraph">You should be redirected within the next 3 seconds.<br>Use the button below if you are not redirected.</p>
+			   <a href="./passdefend" class="header__btn btn shadow">Go</a>
+         </header>
+      </div>
+  </body>
 </html>
